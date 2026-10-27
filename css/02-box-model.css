@@ -3,3 +3,111 @@
    Что здесь пишем: box-sizing, padding, margin, border, border-radius у секций, кнопок, карточек
    ========================================================= */
 
+*, *::before, *::after {
+   box-sizing: border-box;
+}
+
+.container {
+   margin-inline: auto;
+}
+
+.section {
+   padding-block: var(--section-space);
+}
+
+.eyebrow {
+   margin-block-end: 1rem;
+}
+
+.section__title {
+   margin-block-end: 3.5rem;
+}
+
+.section__title:has(+ .section__lead) {
+   margin-inline-end: 1.25rem;
+}
+
+.section__lead {
+   margin-block-end: 3rem;
+}
+
+.btn {
+   padding: 0.95rem 1.7rem;
+   border: 1xp solid transparent;
+   border-radius: 999px;
+}
+
+.hero__inner {
+   padding-block: clamp(3rem, 7vw, 6rem);
+}
+
+.hero__badge {
+   margin-block-end: 1.5rem;
+}
+
+.stat {
+   padding-block-start: 1.25rem;
+   border-block-start: 1px solid var(--border);
+}
+
+.about__text p + p {
+   margin-block-start: 1.25rem;
+}
+
+.facts {
+   margin-block-start: 2.5rem;
+}
+
+.fact__item {
+   padding-block: 1rem;
+   border-block-start: 1px solid var(--border);
+}
+
+.skill__card {
+   padding-block-start: 1.5rem;
+   border-block-start: 1px solid var(--border);
+}
+
+.skill-card__title {
+   margin-block: 0.75rem 0.6rem;
+}
+
+.skill-card__text {
+   margin-block-end: 1.25rem;
+}
+
+.tag {
+   padding: 0.25rem 0.7rem;
+   border-radius: 999px;
+}
+
+.marquee {
+   margin-block-start: 5rem;
+}
+
+.project-card_media {
+   border-radius: var(--radius-l);
+}
+
+.project-card_body {
+   padding-block-start: 1.5rem;
+}
+
+.contact_info {
+   padding-inline-end: 1rem;
+}
+
+.form {
+   padding: clamp(1.5rem, 4vw, 2.75rem);
+   border: 1px solid var(--border);
+   border-radius: var(--radius-l);
+}
+
+.timeline__item {
+   padding-block-end: 2.75rem;
+}
+
+.silet-footer {
+   padding-block: 2.75rem;
+   border-block-start: 1px solid var(--border);
+}
